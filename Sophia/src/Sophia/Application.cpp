@@ -1,3 +1,4 @@
+#include "sppch.h"
 #include "Application.h"
 
 namespace Sophia {

@@ -1,5 +1,6 @@
 #include <Sophia.h>
-
+#include <map>
+// ¼Ì³ÐSophiaµÄApplicationÀà
 class Sandbox : public Sophia::Application
 {
 public:

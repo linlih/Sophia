@@ -1,0 +1,3 @@
+[submodule "Sophia/vendor/spdlog"]
+	path = Sophia/vendor/spdlog
+	url = https://github.com.cnpmjs.org/gabime/spdlog
