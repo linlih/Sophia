@@ -10,6 +10,11 @@ workspace "Sophia"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["glfw"] = "Sophia/vendor/glfw/include"
+
+include "Sophia/vendor/glfw"
+
 project "Sophia"
 	location "Sophia"
 	kind "Sharedlib"
@@ -29,7 +34,15 @@ project "Sophia"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.glfw}"
+	}
+
+	links 
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -40,7 +53,8 @@ project "Sophia"
 		defines 
 		{
 			"SP_PLATFORM_WINDOWS",
-			"SP_BUILD_DLL"
+			"SP_BUILD_DLL",
+			"SP_ENABLE_ASSERTS"
 		}
 
 		postbuildcommands

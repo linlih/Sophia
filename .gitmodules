@@ -1,3 +1,6 @@
 [submodule "Sophia/vendor/spdlog"]
 	path = Sophia/vendor/spdlog
 	url = https://github.com.cnpmjs.org/gabime/spdlog
+[submodule "Sophia/vendor/glfw"]
+	path = Sophia/vendor/glfw
+	url = https://github.com.cnpmjs.org/TheCherno/glfw.git
