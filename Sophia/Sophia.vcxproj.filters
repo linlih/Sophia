@@ -34,6 +34,18 @@
     <ClInclude Include="src\Sophia\Events\Event.h">
       <Filter>Sophia\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Sophia\Events\KeyEvent.h">
+      <Filter>Sophia\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sophia\Events\MouseEvent.h">
+      <Filter>Sophia\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sophia\Layer.h">
+      <Filter>Sophia</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sophia\LayerStack.h">
+      <Filter>Sophia</Filter>
+    </ClInclude>
     <ClInclude Include="src\Sophia\Log.h">
       <Filter>Sophia</Filter>
     </ClInclude>
@@ -41,14 +53,18 @@
       <Filter>Sophia</Filter>
     </ClInclude>
     <ClInclude Include="src\sppch.h" />
-    <ClInclude Include="src\Sophia\Events\KeyEvent.h" />
-    <ClInclude Include="src\Sophia\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Sophia\Application.cpp">
+      <Filter>Sophia</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sophia\Layer.cpp">
+      <Filter>Sophia</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sophia\LayerStack.cpp">
       <Filter>Sophia</Filter>
     </ClCompile>
     <ClCompile Include="src\Sophia\Log.cpp">
