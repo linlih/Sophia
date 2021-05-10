@@ -12,8 +12,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["glfw"] = "Sophia/vendor/glfw/include"
+IncludeDir["glad"] = "Sophia/vendor/glad/include"
 
 include "Sophia/vendor/glfw"
+include "Sophia/vendor/glad"
 
 project "Sophia"
 	location "Sophia"
@@ -36,12 +38,14 @@ project "Sophia"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.glfw}"
+		"%{IncludeDir.glfw}",
+		"%{IncludeDir.glad}"
 	}
 
 	links 
 	{
 		"GLFW",
+		"GLAD",
 		"opengl32.lib"
 	}
 
@@ -54,7 +58,8 @@ project "Sophia"
 		{
 			"SP_PLATFORM_WINDOWS",
 			"SP_BUILD_DLL",
-			"SP_ENABLE_ASSERTS"
+			"SP_ENABLE_ASSERTS",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands

@@ -4,7 +4,6 @@
 
 #include "GLFW/glfw3.h"
 
-
 namespace Sophia {
 
 	class WindowsWindow : public Window
