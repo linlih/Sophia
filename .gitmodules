@@ -4,3 +4,6 @@
 [submodule "Sophia/vendor/glfw"]
 	path = Sophia/vendor/glfw
 	url = https://github.com.cnpmjs.org/TheCherno/glfw.git
+[submodule "Sophia/vendor/imgui"]
+	path = Sophia/vendor/imgui
+	url = https://github.com/TheCherno/imgui

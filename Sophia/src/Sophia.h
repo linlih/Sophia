@@ -6,6 +6,8 @@
 #include "Sophia/Layer.h"
 #include "Sophia/Log.h"
 
+#include "Sophia/ImGui/ImGuiLayer.h"
+
 // ---EntryPoint---
 #include "Sophia/EntryPoint.h"
 // ----------------

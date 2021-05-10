@@ -12,7 +12,7 @@ public:
 
 	void OnUpdate() override
 	{
-		SP_INFO("ExampleLayer::OnUpdate");
+		//SP_INFO("ExampleLayer::OnUpdate");
 	}
 
 	void OnEvent(Sophia::Event& event) override
@@ -27,6 +27,7 @@ class Sandbox : public Sophia::Application
 public:
 	Sandbox() {
 		PushLayer(new ExampleLayer());
+		PushOverLayer(new Sophia::ImGuiLayer());
 	}
 	~Sandbox() {
 
